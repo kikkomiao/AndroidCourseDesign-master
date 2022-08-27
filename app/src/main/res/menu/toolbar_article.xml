@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <item-->
+<!--        android:id="@+id/tab_love"-->
+<!--        style="@style/Custom.TabRadioButton"-->
+<!--        android:checked="true"-->
+<!--        android:icon="@drawable/nav_favorite"-->
+<!--        android:title="收藏"-->
+<!--        app:showAsAction="always"-->
+<!--        android:orderInCategory="180" />-->
+
+    <item
+        android:id="@+id/tab_edit"
+        style="@style/Custom.TabRadioButton"
+        android:icon="@drawable/nav_edit"
+        android:title="编辑"
+        app:showAsAction="always"
+        android:orderInCategory="190"/>
+
+    <item
+        android:id="@+id/tab_delete"
+        style="@style/Custom.TabRadioButton"
+        android:icon="@drawable/nav_clear_cache"
+        android:title="删除"
+        app:showAsAction="always"
+        android:orderInCategory="210"/>
+
+    <item
+        android:id="@+id/tab_share"
+        style="@style/Custom.TabRadioButton"
+        android:icon="@drawable/nav_publish"
+        android:title="分享"
+        app:showAsAction="always"
+        android:orderInCategory="220" />
+</menu>

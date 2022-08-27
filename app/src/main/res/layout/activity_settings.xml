@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--顶部标题框-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/jmui_menu_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorRed">
+
+        <ImageView
+            android:id="@+id/ic_return_left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_return_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
+
+        <TextView
+            android:id="@+id/tv_groupOrContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="190dp"
+            android:singleLine="true"
+            android:text="设  置"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ic_return_left"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_setting_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

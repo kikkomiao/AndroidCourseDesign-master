@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_app_bar_navigation_home"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/title_home"
+        app:showAsAction="always" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_message"-->
+<!--        android:icon="@drawable/nav_publish"-->
+<!--        android:title="我要反馈"-->
+<!--        app:showAsAction="always"/>-->
+
+    <item
+        android:id="@+id/navigation_discover"
+        android:icon="@drawable/ic_nav_discover"
+        android:title="常见问题"
+        app:showAsAction="always" />
+
+</menu>

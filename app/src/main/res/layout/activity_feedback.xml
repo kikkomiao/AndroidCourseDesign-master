@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶部标题框-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/title_bar_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorRed">
+
+        <ImageView
+            android:id="@+id/ic_return_left_feedback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_return_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
+
+        <TextView
+            android:id="@+id/title_content_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="190dp"
+            android:singleLine="true"
+            android:text="意见反馈"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ic_return_left_feedback"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--期待反馈图片-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_feedback_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/imageView_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/img_expect_feedback" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--常见问题列表-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_feedback_question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/tv_feedback_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="常见问题"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_feedback_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="全部"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_feedback_title1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_feedback_title1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_feedback_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+<!--                <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--                    android:id="@+id/bottomAppBar_feedback"-->
+<!--                    style="@style/Widget.MaterialComponents.BottomAppBar.Colored"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="bottom"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    android:elevation="3dp"-->
+<!--                    app:hideOnScroll="true"-->
+<!--                    app:fabAlignmentMode="center"-->
+<!--                    app:fabCradleMargin="5dp"-->
+<!--                    app:fabCradleRoundedCornerRadius="20dp"-->
+<!--                    app:menu="@menu/bottom_app_bar_menu"-->
+<!--                    app:navigationIcon="@drawable/ic_nav_home"-->
+<!--                    app:navigationContentDescription="首页" />-->
+
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottomAppBar_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="?android:attr/windowBackground"
+                    android:elevation="6dp"
+                    app:fabAlignmentMode="center"
+                    app:fabCradleMargin="10dp"
+                    app:fabCradleRoundedCornerRadius="10dp"
+                    app:hideOnScroll="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:menu="@menu/bottom_app_bar_menu" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/navigation_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:contentDescription="我要反馈"
+                    android:elevation="8dp"
+                    android:src="@drawable/ic_edit_article"
+                    app:backgroundTint="#FF9800"
+                    app:layout_anchorGravity="center_horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/bottomAppBar_feedback"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

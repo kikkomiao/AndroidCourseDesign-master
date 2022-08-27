@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable-hdpi/jmui_msg_receive_bg.xml" value="0.136" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable-hdpi/jmui_msg_send_bg.xml" value="0.136" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable-v24/shadow2.xml" value="0.2435" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable-v24/shape_deliver_album.xml" value="0.2435" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable-xhdpi/btn_multi_bg.xml" value="0.133" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable-xhdpi/btn_send_bg_disable.xml" value="0.133" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable-xhdpi/btn_voice_or_text.xml" value="0.133" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable/back_white_line_yellow.xml" value="0.1" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable/btn_circle_shape.xml" value="0.1655" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable/btn_circle_shape_confirm.xml" value="0.1655" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable/comment_bt_selector.xml" value="0.1" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable/comment_dialog_et_selector.xml" value="0.1" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable/edit_background.xml" value="0.144" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable/ground.xml" value="0.139" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable/question_modify_pwd.xml" value="0.2115" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable/round_gb.xml" value="0.2435" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable/shadow2.xml" value="0.2435" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable/shape_deliver_album.xml" value="0.2435" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/drawable/switch_open.xml" value="0.1195" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/acticity_comment.xml" value="0.19021739130434784" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/acticity_comment_empty.xml" value="0.1" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_aboutapp.xml" value="0.2" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_account.xml" value="0.16145833333333334" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_all_questions.xml" value="0.12604166666666666" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_article.xml" value="0.13958333333333334" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_article_detail.xml" value="0.13958333333333334" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_blog.xml" value="0.21331521739130435" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_chat.xml" value="0.2" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_consulting_service.xml" value="0.2" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_currency.xml" value="0.16145833333333334" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_detail_pic.xml" value="0.2" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_edit_article.xml" value="0.13958333333333334" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_feedback.xml" value="0.176" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_font_size.xml" value="0.6" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_function_intro.xml" value="0.1" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_privacy.xml" value="0.264" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_privacy_and_currency.xml" value="0.2" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_privacypolicy.xml" value="0.13385416666666666" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_register.xml" value="0.176" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_servicepolicy.xml" value="0.176" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_settings.xml" value="0.13425925925925927" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_subscribe.xml" value="0.192481884057971" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_subscribe_add.xml" value="0.19021739130434784" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_subscribe_add1.xml" value="0.19021739130434784" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_subscribe_add2.xml" value="0.19021739130434784" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_subscribe_web.xml" value="0.19021739130434784" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_user_detail.xml" value="0.264" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_user_favorite.xml" value="0.18541666666666667" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/activity_web.xml" value="0.13958333333333334" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/answer_activity.xml" value="0.19021739130434784" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/answer_start_page.xml" value="0.264" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/begin_show.xml" value="0.2" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/comment_dialog_layout.xml" value="0.1" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/item_all_questioninfo.xml" value="0.2" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/item_article.xml" value="0.264" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/item_comment.xml" value="0.16927083333333334" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/item_favorite_news.xml" value="0.13958333333333334" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/item_layout01.xml" value="0.15416666666666667" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/item_layout02.xml" value="0.15416666666666667" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/item_layout03.xml" value="0.15416666666666667" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/item_questioninfo.xml" value="0.4" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/item_recycler.xml" value="0.2" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/item_settinginfo.xml" value="0.4" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/item_subscribe.xml" value="0.192481884057971" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/modify_pwd.xml" value="0.264" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/msg_item.xml" value="0.1" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/nav_header.xml" value="0.264" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/news_big.xml" value="0.21331521739130435" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/news_list.xml" value="0.15416666666666667" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/news_nopic.xml" value="0.21331521739130435" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/ok_activity.xml" value="0.2" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/page_empty.xml" value="0.2" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/question_cancel_account.xml" value="0.1" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/question_change_text_size.xml" value="0.1" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/question_clean_cache.xml" value="0.1" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/question_modify_pwd.xml" value="0.2034252297410192" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/layout/view_keyboard_xhs.xml" value="0.264" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/menu/bottom_app_bar_menu.xml" value="0.25364583333333335" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/menu/bottom_nav_menu.xml" value="0.15416666666666667" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/menu/nav_menu.xml" value="0.19479166666666667" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/menu/tool_webbottom.xml" value="0.1" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/menu/toolbar.xml" value="0.15416666666666667" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/menu/toolbar_article.xml" value="0.25364583333333335" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/menu/toolbar_webview.xml" value="0.15416666666666667" />
+        <entry key="..\:/mobile_compute/AndroidCourseDesign-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1795" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

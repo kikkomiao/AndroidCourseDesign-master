@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶部标题框-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/title_bar_aboutapp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorRed">
+
+        <ImageView
+            android:id="@+id/ic_return_left_aboutapp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_return_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
+
+        <TextView
+            android:id="@+id/title_content_aboutapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="190dp"
+            android:singleLine="true"
+            android:text="关于看点新闻"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ic_return_left_aboutapp"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ic_app"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/newafter" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_app">
+
+        <TextView
+            android:id="@+id/textview_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看点新闻"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V 1.0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_app_name"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_aboutapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/textview_app_version">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--内容区-->
+<!--    <TextView-->
+<!--        android:id="@+id/textview_content_aboutapp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="671dp"-->
+<!--        android:scrollbars="vertical"-->
+<!--        android:singleLine="false"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+</LinearLayout>

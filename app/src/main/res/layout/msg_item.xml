@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left">
+
+        <!--小智头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_consult_left_avatar"
+            style="@style/app_chat_item_receiver_avatar_style"/>
+
+        <!--小智内容区-->
+        <TextView
+            android:id="@+id/left_msg"
+            style="@style/app_msg_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:autoLink="web"
+            android:background="@drawable/jmui_msg_receive_bg"
+            android:contentDescription="hello"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:textColor="#363333"
+            android:textColorLink="#157BFB"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <!--用户内容区-->
+        <TextView
+            android:id="@+id/right_msg"
+            style="@style/app_msg_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:autoLink="web"
+            android:background="@drawable/jmui_msg_send_bg"
+            android:backgroundTint="#FFADAD"
+            android:contentDescription="hi"
+            android:paddingLeft="10dp"
+            android:paddingRight="18dp"
+            android:textColorLink="#157BFB"
+            android:visibility="visible" />
+
+        <!--用户头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_consult_right_avatar"
+            style="@style/app_chat_item_sender_avatar_style"
+            android:src="@drawable/contact_head_icon"/>
+
+    </LinearLayout>
+
+</LinearLayout>

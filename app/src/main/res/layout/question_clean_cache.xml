@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶部标题框-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/title_bar_question"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorRed">
+
+        <ImageView
+            android:id="@+id/ic_return_left_question"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_return_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
+
+        <TextView
+            android:id="@+id/title_content_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="190dp"
+            android:singleLine="true"
+            android:text="常见问题"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ic_return_left_question"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--问题名称-->
+    <TextView
+        android:id="@+id/tv_question_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="关于清除缓存？"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!--分割横线-->
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#959595"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <!--问题回复内容区-->
+    <TextView
+        android:id="@+id/tv_resolution_clean_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="自动计算看点新闻在您手机中当前所占据的缓存大小,若确定删除所有缓存，离线内容及其图片均会被清除。" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<resources>
+    //主要媒体
+    <string-array name="CCTV_media_name">
+        <item>新华社</item>
+        <item>人民日报</item>
+        <item>央视新闻</item>
+        <item>光明日报</item>
+        <item>中国军网</item>
+        <item>中国妇女报</item>
+    </string-array>
+    <string-array name="CCTV_media_intro">
+        <item>新华社通讯官方账号</item>
+        <item>参与、沟通、记录时代</item>
+        <item>看得见的新闻</item>
+        <item>以理论和亮色系的时评为主，传播理论、唱响时代</item>
+        <item>中央军委批准中国人民解放军唯一新闻门户网站</item>
+        <item>全国妇联机关报，以全媒体产品引领、服务、联系妇女</item>
+    </string-array>
+    <string-array name="CCTV_media_address">
+        <item>http://203.192.6.89/xhs/</item>
+        <item>http://paper.people.com.cn/rmrb/html/2022-06/27/nbs.D110000renmrb_01.htm</item>
+        <item>https://news.cctv.com/</item>
+        <item>https://www.gmw.cn/</item>
+        <item>http://www.81.cn/</item>
+        <item>http://paper.cnwomen.com.cn/html/2022-06/24/nbs.D110000zgfnb_1.htm</item>
+    </string-array>
+
+    //行业媒体
+    <string-array name="Industry_media_name">
+        <item>中国文艺网</item>
+        <item>中国艺术报</item>
+        <item>中国社会科学网</item>
+        <item>二更</item>
+        <item>中国文物报</item>
+        <item>中国电影报</item>
+    </string-array>
+    <string-array name="Industry_media_intro">
+        <item>发布文艺政策，传播文艺动态，推介文艺界榜样，弘扬文艺界正风</item>
+        <item>《中国艺术报》是由中国文联主管主板的国家级文艺行业大报</item>
+        <item>哲学社会科学工作者和爱好者的精神家园</item>
+        <item>发现身边不知道的美</item>
+        <item>中国文物报是国家文物局主管的文博考古全行业全国性权威媒体单位</item>
+        <item>国家电影局主管，中国电影艺术研究中心主办，电影行业权威媒体</item>
+    </string-array>
+    <string-array name="Industry_media_address">
+        <item>http://www.cflac.org.cn/</item>
+        <item>http://www.cflac.org.cn/zgysb/dz/ysb/</item>
+        <item>http://ex.cssn.cn/ysx/</item>
+        <item>https://www.ergengtv.com/</item>
+        <item>https://r.cnki.net/knavi/newspaper/search/WWBN/CWWB</item>
+        <item>http://chinafilmnews.cn/Html/2022-06-22/Qpaper.html</item>
+    </string-array>
+
+    //地方媒体
+    <string-array name="local_media_name">
+        <item>西影网</item>
+        <item>上观新闻</item>
+        <item>文汇</item>
+        <item>北京时间</item>
+        <item>新民晚报</item>
+        <item>川观新闻</item>
+        <item>澎湃新闻</item>
+    </string-array>
+    <string-array name="local_media_intro">
+        <item>由西影集团主办，面向全球弘扬中国优秀传统文化的网络视听平台</item>
+        <item>解放日报出品新媒体</item>
+        <item>文汇报——高品质的人文阅读平台</item>
+        <item>北京广播电视台北京时间，首都特色，时代声音</item>
+        <item>阅读上海选择，你在上海的生活助手</item>
+        <item>四川时事要闻第一平台</item>
+        <item>专注时政与思想的媒体开放平台</item>
+    </string-array>
+    <string-array name="local_media_address">
+        <item>https://www.1958xy.com/</item>
+        <item>https://www.shobserver.com/staticsg/home</item>
+        <item>http://www.whb.cn/index.html</item>
+        <item>https://www.btime.com/</item>
+        <item>https://paper.xinmin.cn/</item>
+        <item>https://cbgc.scol.com.cn/</item>
+        <item>https://www.thepaper.cn/</item>
+    </string-array>
+</resources>

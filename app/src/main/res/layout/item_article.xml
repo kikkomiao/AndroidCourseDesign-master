@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp">
+    <!--作为子项的布局，使得每张图片都是在卡片当中-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <!--指定图片的缩放模式，让图片保持原有比例填充满ImageView，并将超出屏幕的部分裁剪掉-->
+
+            <TextView
+                android:id="@+id/page_change"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="292dp"
+                android:layout_marginLeft="292dp"
+                android:layout_marginTop="99dp"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginRight="-1dp"
+                android:text="点击查看详情…"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/article_name"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="117dp"
+                android:layout_marginRight="117dp"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:maxEms="15"
+                android:maxLines="1"
+                android:text="这是博客标题"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/article_context"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="61dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="这是博客内容"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/article_time"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginEnd="255dp"
+                android:layout_marginRight="255dp"
+                android:text="Time"
+                android:textSize="12sp" />
+        </RelativeLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:id="@+id/txt_delete"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@color/colorRed"-->
+<!--                android:gravity="center"-->
+<!--                android:text="删除"-->
+<!--                android:textColor="@color/colorBlack" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+</androidx.cardview.widget.CardView>

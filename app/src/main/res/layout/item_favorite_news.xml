@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="0dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/item_news_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="324dp"
+                android:layout_height="69dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="4"
+                android:text="@string/default_text"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:scaleType="fitXY"
+                android:src="@drawable/defaultbg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="153dp"
+            android:layout_height="29dp"
+            android:layout_alignStart="@+id/item_news_linearlayout"
+            android:layout_alignLeft="@+id/item_news_linearlayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="204dp"
+            android:layout_marginRight="204dp"
+            android:layout_marginBottom="0dp"
+            android:text="Author"
+            android:textColor="@color/colorGray"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

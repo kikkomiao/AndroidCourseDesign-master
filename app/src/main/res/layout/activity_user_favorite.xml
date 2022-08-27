@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.usermodel.UserFavoriteActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/userFavorite_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <ListView
+            android:id="@+id/favorite_newsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/colorWhite">
+        </ListView>
+        <!--        <TextView-->
+        <!--            android:id = "@+id/empty_page"-->
+        <!--            android:layout_width = "match_parent"-->
+        <!--            android:layout_height = "match_parent"-->
+        <!--            android:layout_weight = "1"-->
+        <!--            android:gravity = "center"-->
+        <!--            android:padding = "15dip"-->
+        <!--            android:text = "暂无收藏！"-->
+        <!--            android:textSize = "22sp"-->
+        <!--            android:visibility = "gone"  />-->
+
+        <ImageView
+            android:id="@+id/empty_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/empty_page"
+            android:background="@color/BgGray"/>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

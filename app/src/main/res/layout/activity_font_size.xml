@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶部标题框-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/title_bar__font_size"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorRed">
+
+        <ImageView
+            android:id="@+id/ic_return_left_font_size"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_return_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
+
+        <TextView
+            android:id="@+id/title_content__font_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="190dp"
+            android:singleLine="true"
+            android:text="字体大小"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ic_return_left_font_size"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="调节仅在咨询聊天窗口生效。"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_notes"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="左右拖动下方滑块，调节测试文字大小"
+        android:textSize="16dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-65dp"
+        android:layout_marginLeft="-65dp"
+        android:layout_marginEnd="-80dp"
+        android:layout_marginRight="-80dp">
+
+        <TextView
+            android:id="@+id/tv_size_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_size_normal"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="27dp" />
+
+        <TextView
+            android:id="@+id/tv_size_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标准"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_size_big"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_size_small"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <TextView
+            android:id="@+id/tv_size_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_size_normal"
+            tools:layout_editor_absoluteY="16dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar_text_size"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:max="2"
+        android:progress="1"
+        android:progressTint="@color/colorRed"
+        android:thumb="@android:drawable/radiobutton_off_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

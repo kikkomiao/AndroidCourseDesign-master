@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">看点新闻</string>
+    <!--  底栏  -->
+    <string name="title_home">主页</string>
+    <string name="title_discover">答题</string>
+    <string name="title_message">咨询</string>
+    <string name="title_personal">设置</string>
+    <string name="default_text">大家好哈哈哈这是一个标题</string>
+    <string-array name="app_question">
+        <item>他是中国科学院院士，是我国著名的核物理学家，在二代核武器研制中突破关键技术，被称为“国防科技事业改革发展的重要推动者”。2018年12月18日，中共中央、国务院授予他改革先锋称号，他的名字是()</item>
+        <item>把生态文明建设纳入中国特色社会主义事业总体布局的是()</item>
+        <item>2016年7月1日，在庆祝中国共产党成立95周年大会.上的讲话中，习近平总书记指出，() 是党执政兴国的第-要务,是解决中国所有问题的关键。</item>
+        <item>人类可以利用自然，改造自然，但归根到底() ，必须呵护自然，不能凌驾于自然之上。</item>
+        <item>在十九大报告中，习近平总书记要求全党牢牢坚持()这个党和国家的生命线、人民的幸福线。</item>
+        <item>“我们不要过分陶醉于我们人类对自然界的胜利。对于每-次这样的胜利，自然界都对我们进行报复。”这个论断的提出者是()</item>
+        <item>在五大新发展理念中，最能体现坚持以人民为中心的发展思想的是() 。</item>
+        <item>() 是社会主义民主政治的本质特征。</item>
+        <item>党的十八届五中全会把扶贫攻坚改成了脱贫攻坚，明确到() 年我国现行标准下农村贫困人口实现脱贫，贫困县全部摘帽，解决区域性整体贫困。</item>
+        <item>习近平总书记在一次讲话中引用了明代官员陈诚的诗句“绿野草铺茵，空山雪积银。四时常觉冷,六月不知春”，写的是()的景色。</item>
+
+    </string-array>
+    <string-array name="app_answer_A">
+        <item>于敏</item>
+        <item>党的十八大</item>
+        <item>改革</item>
+        <item>是自然的一部分</item>
+        <item>群众路线</item>
+        <item>马克思</item>
+        <item>创新理念</item>
+        <item>党的领导</item>
+        <item>2020 年</item>
+        <item>北欧</item>
+    </string-array>
+    <string-array name="app_answer_B">
+        <item>袁隆平</item>
+        <item>党的十八届三中全会</item>
+        <item>发展</item>
+        <item>是自然的主人</item>
+        <item>四项基本原则</item>
+        <item>恩格斯</item>
+        <item>开放理念</item>
+        <item>人民当家作主</item>
+        <item>2030年</item>
+        <item>北极</item>
+    </string-array>
+    <string-array name="app_answer_C">
+        <item>屠呦呦</item>
+        <item>党的十九大</item>
+        <item>稳定</item>
+        <item>是无条件听从自然</item>
+        <item>党的基本路线</item>
+        <item>列宁</item>
+        <item>共享理念</item>
+        <item>依法治国</item>
+        <item>2035年</item>
+        <item>中亚</item>
+    </string-array>
+</resources>

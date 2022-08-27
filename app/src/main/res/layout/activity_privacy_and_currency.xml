@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶部标题框-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/title_bar_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorRed">
+
+        <ImageView
+            android:id="@+id/ic_return_left_privacy"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_return_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
+
+        <TextView
+            android:id="@+id/title_content_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="190dp"
+            android:singleLine="true"
+            android:text="隐私和通用"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ic_return_left_privacy"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--内容区-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview_authorization_management"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="系统权限管理"
+                android:textSize="18sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite" >
+
+                <TextView
+                    android:id="@+id/textview_permission_image"
+                    android:layout_width="370dp"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="相册权限"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    app:layout_constraintRight_toLeftOf="@+id/switch_permission_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Switch
+                    android:id="@+id/switch_permission_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:textOff="开"
+                    android:textOn="关"
+                    android:thumbTint="@color/colorRed"
+                    android:thumbTintMode="multiply"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/textview_permission_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textview_character_management"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="个性化设置"
+                android:textSize="18sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_permission_text_size"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="字体大小"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imgview_enter_textsize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:tint="@color/gray_btn_bg_pressed_color"
+                        app:srcCompat="@drawable/ic_enter_right" />
+                </LinearLayout>
+
+                <!--                <TextView-->
+<!--                    android:id="@+id/textview_size_small"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:text="小"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/seekBar_text_size"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/textview_permission_text_size" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textview_size_middle"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="中"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/seekBar_text_size"-->
+<!--                    app:layout_constraintEnd_toStartOf="@+id/textview_size_middle2"-->
+<!--                    app:layout_constraintHorizontal_bias="0.505"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/textview_size_small" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textview_size_middle2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="16dp"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    android:text="大"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/seekBar_text_size"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--                <SeekBar-->
+<!--                    android:id="@+id/seekBar_text_size"-->
+<!--                    style="@style/Widget.AppCompat.SeekBar.Discrete"-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:max="2"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:progress="1"-->
+<!--                    android:progressTint="@color/colorPrimary"-->
+<!--                    android:thumb="@android:drawable/radiobutton_off_background"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/textview_permission_text_size" />-->
+
+                <!--                <Switch-->
+                <!--                    android:id="@+id/switch_permission_text_size"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text=""-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintLeft_toRightOf="@+id/textview_permission_image"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

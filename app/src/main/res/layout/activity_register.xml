@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.usermodel.LoginActivity">
+
+<!--    <LinearLayout-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        >-->
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/login_logo"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@mipmap/ic_launcher_foreground" />-->
+<!--        <TextView-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:id="@+id/textview_login"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:text="账号注册"-->
+<!--            android:textSize="30sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:singleLine="true"-->
+<!--            android:maxLines="1"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/register_userAccount"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="请输入注册账号"-->
+<!--        android:singleLine="true"-->
+<!--        android:maxLines="1"-->
+<!--        />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/register_pwd"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:hint="请输入登录密码"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:singleLine="true"-->
+<!--        android:maxLines="1"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/confirm_pwd"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:hint="请确定登录密码"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:singleLine="true"-->
+<!--        android:maxLines="1"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/register_click"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:backgroundTint="@color/colorPrimary"-->
+<!--        android:text="注册"-->
+<!--        android:textColor="@color/colorGray"-->
+<!--        android:textStyle="bold" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/register_app_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/newafter" />
+
+        <TextView
+            android:id="@+id/register_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看点新闻"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/register_app_logo"
+            app:layout_constraintEnd_toStartOf="@+id/register_user_icon"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toEndOf="@+id/register_app_logo"
+            app:layout_constraintTop_toTopOf="@+id/register_app_logo" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/register_user_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="35dp"
+            android:src="@drawable/no_login_avatar"
+            app:layout_constraintBottom_toBottomOf="@+id/register_app_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/register_app_logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_register_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingTop="10dp"
+                android:text="账号"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/ed_register_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="35dp"
+                android:ems="10"
+                android:hint="请输入注册账号"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_register_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingTop="10dp"
+                android:text="密码"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/ed_register_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="35dp"
+                android:ems="10"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_register_confirm_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingTop="10dp"
+                android:text="确认密码"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/ed_register_confirm_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="35dp"
+                android:ems="10"
+                android:hint="请确定输入密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/register_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#F44336"
+                android:text="注册"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <!--android:layout_centerVertical="true"相对布局的垂直居中-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_toLeftOf="@+id/login_register"-->
+<!--                    android:text="已有账号?"-->
+<!--                    android:textColor="@color/colorBlack" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/login_register"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:backgroundTint="@color/colorWhite"-->
+<!--                    android:shadowDx="15"-->
+<!--                    android:shadowDy="15"-->
+<!--                    android:text="去登录"-->
+<!--                    android:textColor="#F44336"-->
+<!--                    android:textStyle="bold" />-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/login_bottom_appmark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="25dp"
+        android:text="/@看点新闻" />
+
+</LinearLayout>

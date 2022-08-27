@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--自适应调节，加强版本FrameLayout-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F44336">
+
+            <ImageView
+                android:id="@+id/img_web_MySubscribe"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.538"
+                app:srcCompat="@drawable/ic_return_left" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical">
+            <!--嵌入一个浏览器-->
+
+            <WebView
+                android:id="@+id/subscribe_web_View"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </WebView>
+
+            <!--ListView为不可见状态-->
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
+
+            </ListView>
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/subscribe_back">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon_web_newsImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/avatar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txt_web_newsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="15dp"
+                android:text="央视网"
+                android:textColor="#0B0A0A"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_web_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginBottom="10dp"
+                android:maxLength="13"
+                android:text="央视网，世界就在眼前"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn_web_subscribe"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#F44336"
+                android:text="未关注"
+                android:textColor="#F8F5F5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,96 @@
+<!--加强版FrameLayout，coordinatorlayout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_subscribe"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.538"
+            app:srcCompat="@drawable/ic_return_left" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看点号"
+            android:textColor="#FBFAFA"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/img_subscribe"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#E3E0E0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_yangmei1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="主要央媒"
+                android:textColor="#050505"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_hangmei1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FAF6F6"
+                android:gravity="center"
+                android:text="行业媒体"
+                android:textColor="#050505"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_fangmei1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="地方媒体"
+                android:textColor="#050505"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/add_subscribe_recycler_view1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--FloatingActionButton是coordinatorlayout的子控件，能被及时监听到-->
+    <!--设置阴影效果：app:elevation-->
+</LinearLayout>

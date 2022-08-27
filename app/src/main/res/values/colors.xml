@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--添加颜色-->
+    <color name="colorRed">#F00</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="colorGray">#DCDCDC</color>
+
+    <color name="BgGray">#F5F5F5</color>
+
+    <color name="btn_send_textcolor">@color/colorWhite</color>
+    <color name="chat_text_color">#0B1816</color>
+</resources>

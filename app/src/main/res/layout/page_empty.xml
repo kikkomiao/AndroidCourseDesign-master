@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/BgGray">
+
+        <ImageView
+            android:id="@+id/empty_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/empty_page" />
+
+        <TextView
+            android:id="@+id/article_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/article_image"
+            android:text="Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/article_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/article_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/article_image"
+            android:text="Time"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/article_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

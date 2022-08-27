@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <!--自定义标题栏-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#F44336</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorRed</item>
+        <!--设置窗口半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置隐藏标题栏-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="android:Theme.Material.Light.Dialog" tools:targetApi="lollipop">
+        <item name="android:colorAccent">@color/colorRed</item>
+    </style>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:datePickerDialogTheme" tools:targetApi="lollipop">@style/MyDatePickerDialogTheme</item>
+    </style>
+
+    <style name="AppTheme1" parent="AppBaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="app_chat_item_receiver_avatar_style">
+        <item name="android:layout_width">@dimen/item_head_icon_size</item>
+        <item name="android:layout_height">@dimen/item_head_icon_size</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">8dp</item>
+<!--        <item name="android:src">@drawable/contact_head_icon</item>-->
+        <item name="android:src">@drawable/contact_receiver_head_icon</item>
+    </style>
+
+    <style name="app_chat_item_sender_avatar_style">
+        <item name="android:layout_width">@dimen/item_head_icon_size</item>
+        <item name="android:layout_height">@dimen/item_head_icon_size</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">8dp</item>
+<!--        <item name="android:src">@drawable/contact_head_icon</item>-->
+    </style>
+
+    <style name="app_chat_display_name_style">
+        <item name="android:ems">5</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#B3B3B3</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="app_msg_text_style">
+        <item name="android:maxWidth">230dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+<!--        <item name="android:textSize">16sp</item>-->
+        <item name="android:paddingTop">9dp</item>
+        <item name="android:paddingBottom">8.67dp</item>
+        <item name="android:textColor">@color/chat_text_color</item>
+    </style>
+
+    <style name="Custom" />
+    <style name="Custom.TabRadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#F44336</item>
+    </style>
+
+</resources>

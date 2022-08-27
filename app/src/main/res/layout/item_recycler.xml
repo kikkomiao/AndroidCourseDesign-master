@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_answer_question"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.538"
+            app:srcCompat="@drawable/ic_return_left" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="172dp"
+            android:layout_marginRight="172dp"
+            android:text="看点答题"
+            android:textColor="#FBFAFA"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="left"
+        android:minHeight="100dp"
+        android:text="1.他是中国科学院院士，是我国著名的核物理学家，在二代核武器研制中突破关键技术，被称为“国防科技事业改革发展的重要推动者”。2018年12月18日，中共中央、国务院授予他改革先锋称号，他的名字是()"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/back_white_line_yellow"
+        android:gravity="center"
+        android:text="A.于敏"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/back_white_line_yellow"
+        android:gravity="center"
+        android:text="B.袁隆平"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/back_white_line_yellow"
+        android:gravity="center"
+        android:text="C.屠呦呦"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="55dp"
+        android:text="上一题 >>"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

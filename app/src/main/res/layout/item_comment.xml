@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="2dp">
+    <!--作为子项的布局，使得每张图片都是在卡片当中-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--            android:id="@+id/comment_image"-->
+        <!--            android:layout_width="65dp"-->
+        <!--            android:layout_height="65dp"-->
+        <!--            android:layout_alignParentLeft="true"-->
+        <!--            android:layout_marginStart="5dp"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:layout_marginEnd="5dp"-->
+        <!--            android:layout_marginRight="5dp"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            android:src="@mipmap/ic_launcher_foreground" />-->
+
+        <ImageView
+            android:id="@+id/comment_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_foreground" />
+        <!--指定图片的缩放模式，让图片保持原有比例填充满ImageView，并将超出屏幕的部分裁剪掉-->
+
+        <TextView
+            android:id="@+id/comment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/comment_image"
+            android:text="青稞"
+            android:textColor="#090000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/comment_image"
+            android:text="刚刚" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_comment_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="30dp"
+        android:text="读书破万卷，下笔如有神"
+        android:textColor="#130101"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_comment_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#E91E63"
+        android:textSize="16sp" />
+
+</androidx.cardview.widget.CardView>
